@@ -10,9 +10,9 @@
   <body ng-app="superDuperHeroApp" style="margin-left:10px; margin-right:10px;">
     <div ng-controller="hero">
     <header>
-      <div style="text-align: center; background-color: orange;">
+      <div style="text-align: center; background-color: #192738; color:#fff;">
         <h1>Heroes of the galaxy</h1>
-        <p>Search is async</p>
+        <p>Search is <em style="color: orange;">async</em></p>
       </div>
     </header>
       <div>
@@ -32,21 +32,8 @@
           <tr ng-repeat="event in character.events.items">
             <td><a href="{{event.resourceURI}}?ts=44&apikey=45ced310692d43a67c8e19f517a3f525&hash=f25e0c4e1d1707c44af9905ef2cb79d4">{{event.name}}</a></td>
           </tr>
-
         </table>
-<!--       <table class="table table-striped table-hover">
-        <tr>
-          <td>Hero</td>
-          <td>Image</td>
-        </tr>
-        <tr ng-repeat="character in characters">
-          <td>{{character.name}}</td>
-          <td><img ng-src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" style="height:50px; width:50px;"/>
-        </tr>
-      </table> -->
     </div>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="md5js.js"></script>
     <script src="superhero.js"></script>
